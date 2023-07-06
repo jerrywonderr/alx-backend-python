@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Complex annotations using TypeVar for generic typing"""
 from typing import Mapping, Any, TypeVar, Union
 

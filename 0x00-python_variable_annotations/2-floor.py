@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""A simple function that returns the result of math.floor on a number"""
-import math
+""" 2. Basic annotations - floor
+"""
 
 
 def floor(n: float) -> int:
-    """Floors any number n"""
-    return math.floor(n)
+    """ Returns floor of number
+    """
+    return int(n) if n >= 0 else int(n) - 1

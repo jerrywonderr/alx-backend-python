@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""A simple function that receives a list of floats and returns their sum"""
+""" 5. Complex types - list of floats
+"""
+
 from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:
-    """Receives a list of floats and returns their sum"""
+    """ Returns list of floats.
+    """
     return sum(input_list)

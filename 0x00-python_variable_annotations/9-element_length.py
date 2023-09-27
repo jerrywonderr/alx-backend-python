@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
+""" 9. Let's duck type an iterable object
 """
-A more complex type annotation for a function that receives
-iterables and returns a list of tuples containing each
-iterable and thier length
-"""
-from typing import Iterable, Sequence, List, Tuple
+
+from typing import Iterable, List, Sequence, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """
-    receives iterables and returns a list of tuples
-    containing each iterable and thier length
+    """ Returns elements of the list with its length
     """
     return [(i, len(i)) for i in lst]

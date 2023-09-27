@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Complex annotations using TypeVar for generic typing"""
-from typing import Mapping, Any, TypeVar, Union
+""" 11. More involved type annotations
+"""
 
-T = TypeVar("T")
+from typing import Any, Mapping, TypeVar, Union
+
+T = TypeVar('T')
 
 
-def safely_get_value(
-        dct: Mapping, key: Any,
-        default: Union[T, None] = None) -> Union[T, Any]:
-    """A function that mocks the builtin get method from the dict class"""
+def safely_get_value(dct: Mapping, key: Any,
+                     default: Union[T, None] = None) -> Union[Any, T]:
+    """ Gets value safely.
+    """
     if key in dct:
         return dct[key]
     else:

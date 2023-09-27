@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""A simple function that concatenates two strigs"""
+""" 1. Basic annotations - concat
+"""
 
 
 def concat(str1: str, str2: str) -> str:
-    """Concatenates two strings and returns their sum"""
-    return "{}{}".format(str1, str2)
+    """ Concats two strings together.
+    """
+    return str(str1) + str(str2)
